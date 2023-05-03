@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="/" id="form">
+            <h1>Registration</h1>
+
+            <!-- use div for each which will help to show the messages -->
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+
+                <!-- use "error" for showing message-->
+                <div class="error"></div>
+            </div>
+
+
+            <!-- type of email should be text otherwise it will halt the process of customization -->
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <div class="error"></div>
+            </div>
+
+
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <div class="error"></div>
+            </div>
+
+
+            <div class="input-control">
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password2" id="password2">
+                <div class="error"></div>
+            </div>
+
+
+            <!-- type submit is important -->
+            <button type="submit">Sign Up</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
